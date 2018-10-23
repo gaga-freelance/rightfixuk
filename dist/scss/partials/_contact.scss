@@ -1,0 +1,73 @@
+.contact {
+  background: $grey-dark;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px 0 40px;
+
+  h1 {
+    color: $white;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 50px;
+      background-color: $grey-light-40;
+      margin: 10px auto 0;
+    }
+  }
+
+  form {
+    text-align: left;
+
+    label {
+      display: block;
+      color: $text-light;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    input[type="text"], input[type="email"] {
+      display: block;
+      width: 100%;
+      padding: 10px 10px;
+      background: none;
+      border: 2px solid $grey-light;
+      border-radius: 3px;
+      color: $text-light;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+
+      &::placeholder {
+        color: $text-light-70;
+      }
+
+      &:focus {
+        color: $primary;
+        background: $grey-light;
+      }
+    }
+    textarea {
+      width: 100%;
+      padding: 10px 10px;
+      border: 2px solid $grey-light;
+      color: $text-light;
+      border-radius: 3px;
+      background: none;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+
+      &:focus {
+        color: $primary;
+        background: $grey-light;
+      }
+    }
+  }
+}

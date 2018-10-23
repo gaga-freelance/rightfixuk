@@ -1,0 +1,60 @@
+footer {
+  background-color: $grey-light-40;
+
+  img {
+    max-width: 100%;
+  }
+
+  .pics {
+    line-height: 3em;
+    padding-top: 30px;
+  }
+
+  .copy {
+    right: 0;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .contactinfo {
+    color: $text-default;
+    font-size: 16px;
+    padding-bottom: 5px;
+
+    small {
+      font-size: 100%;
+    }
+
+    a {
+      color: $text-default;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  footer {
+    img {
+      display: block;
+      padding-bottom: 20px;
+      margin: 0 auto;
+    }
+
+    .contactinfo {
+      display: none;
+    }
+
+    .copy {
+      display: block;
+      position: relative;
+      text-align: center;
+      padding-bottom: 80px;
+    }
+  }
+}

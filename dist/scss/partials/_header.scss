@@ -1,0 +1,92 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $white;
+  z-index: 1;
+
+  .logo {
+    padding: 20px 0 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  nav {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+  	a {
+    	color: $text-default;
+    	text-decoration: none;
+    	display: block;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 22px;
+      padding-right: 30px;
+
+      &:hover {
+        color: $primary;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+  	   &.active {
+  	   	color: $primary;
+  	   }
+  	}
+  }
+}
+
+header.scrolled {
+  .logo {
+    padding: 5px 0 0;
+
+    img {
+      width: 200px;
+    }
+  }
+  nav {
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    .logo img {
+      width: 200px;
+    }
+  }
+
+  nav {
+    top: 20px !important;
+
+    a {
+      font-size: 18px !important;
+    }
+  }
+
+  header.scrolled nav {
+    top: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  nav a {
+    display: inline-block !important;
+  }
+}

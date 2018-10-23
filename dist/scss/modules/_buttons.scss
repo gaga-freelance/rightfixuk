@@ -1,0 +1,23 @@
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  border: 2px solid $grey-light;
+  background: $grey-light;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 0;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    border-color: $white;
+    background: $white;
+    color: $primary;
+  }
+}

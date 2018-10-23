@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 62.5%;
+  background: $white;
+}
+body {
+  font-family: $font-sans;
+  line-height: 1.6;
+  font-size: 16px;
+  color: $text-default;
+  transition: all .4s .3s ease-in;
+}
+body,html{
+	min-height: 100vh;
+}
