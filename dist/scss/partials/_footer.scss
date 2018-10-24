@@ -1,60 +1,20 @@
 footer {
-  background-color: $grey-light-40;
-
-  img {
-    max-width: 100%;
-  }
-
-  .pics {
-    line-height: 3em;
-    padding-top: 30px;
-  }
+  background-color: $purple;
 
   .copy {
-    right: 0;
     font-size: 14px;
-    position: absolute;
     bottom: 0;
-  }
+    padding-bottom: 20px;
+    color: $text-light-40;
 
-  .contactinfo {
-    color: $text-default;
-    font-size: 16px;
-    padding-bottom: 5px;
-
-    small {
-      font-size: 100%;
-    }
-
-    a {
-      color: $text-default;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-        color: $primary;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width:768px) {
-  footer {
-    img {
+      &:before {
+      content: "";
       display: block;
-      padding-bottom: 20px;
-      margin: 0 auto;
-    }
-
-    .contactinfo {
-      display: none;
-    }
-
-    .copy {
-      display: block;
+      height: 1px;
+      background-color: $grey-light-40;
+      margin-bottom: 20px;
       position: relative;
-      text-align: center;
-      padding-bottom: 80px;
     }
   }
+
 }
