@@ -1,118 +1,69 @@
-.nav {
-  ul {
-    list-style: none;
-    li {
-      a {
-
-      }
-    }
-  }
-}
-
-
 body {
   background: #333333;
 }
 
-.wrapper {
-  width: 60%;
-  margin: 0 auto;
-}
-
 .navigation {
-  width: 100%;
-  text-align: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0;
+  z-index: 9999;
+  padding: 0;
 
   li {
-    float: left;
+    display: inline-block;
   }
 }
 
 .menu-item {
-  width: 33.333%;
   position: relative;
   overflow: hidden;
-  color: #181818;
+  color: $text-grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 1px;
 
-  ul{
-    position: relative;
-    left: 9999px;
-    opacity: 0;
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-  }
+
+ @media only screen and (max-width: 37.5em){
+
+   .navigation li {
+     float: none;
+     clear: both;
+   }
+ }
 }
 
 a.menu-link {
   display: block;
-  padding: 15px;
-  margin-bottom: 6px;
+  padding: 20px;
+  text-decoration: none;
+  background: $white;
 }
 
 a {
+  color: $text-grey;
 
-  &.first{
-    background: #ffffff;
-  }
-
-  &.second {
-  background: #ffffff;
-  }
-
-  &.third {
-  background: #ffffff;
-  }
-}
-
-a.second {
-  background: #ffffff;
-}
-
-.dropdown {
-  width: 100%;
-  padding: 20px;
-
-  & a, a:hover, a:visited, a:focus {
+  &.first:hover {
+    background: $red;
+    color: white;
     text-decoration: none;
-    color: #222222;
   }
 
-  &:first-child {
-    border-top: 1px solid rgba(0,0,0,.3)
+  &.second:hover {
+    background: $green;
+    color: white;
+    text-decoration: none;
   }
 
-  &:nth-child(even){
-    background: #eeeeee;
-    transform: perspective(1000px) rotateX(-20deg);
-    transform-origin: top;
-    -webkit-transform: perspective(1000px) rotateX(-20deg);
-    -webkit-transform-origin: top;
+  &.third:hover  {
+    background: $blue;
+    color: white;
+    text-decoration: none;
   }
 
-  &:nth-child(odd){
-    background: #f5f5f5;
-    transform: perspective(1000px) rotateX(20deg);
-    transform-origin: bottom;
-    -webkit-transform: perspective(1000px) rotateX(20deg);
-    -webkit-transform-origin: bottom;
-    margin-top: -11px;
-  }
-}
-
- .menu-item:hover  ul, .menu-item:focus ul {
-  position: static;
-  bottom: 200px;
-  opacity: 1;
-}
-
-@media only screen and (max-width: 37.5em){
-
-  .navigation li {
-    float: none;
-    clear: both;
-  }
-
-  .menu-item {
-    width: 100%;
+  &.fourth:hover  {
+    background: $purple;
+    color: white;
+    text-decoration: none;
   }
 }

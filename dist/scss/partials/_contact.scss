@@ -14,7 +14,7 @@
 
     label {
       display: block;
-      color: $text-light;
+      color: $text-default;
       font-weight: 500;
       font-size: 14px;
     }
@@ -25,7 +25,7 @@
       padding: 10px 10px;
       background: none;
       border: 2px solid $grey-light;
-      color: $text-light;
+      color: $text-default;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
       -ms-transition: all .3s ease-in-out;
@@ -45,7 +45,7 @@
       width: 100%;
       padding: 10px 10px;
       border: 2px solid $grey-light;
-      color: $text-light;
+      color: $text-default;
       background: none;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
