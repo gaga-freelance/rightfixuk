@@ -20,9 +20,11 @@ body {
   overflow: hidden;
   color: $text-grey;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-right: 1px;
+  border-right: 1px solid #F2EBF4;
 
+  &:last-child {
+    border-right: 0;
+  }
 
  @media only screen and (max-width: 37.5em){
 
